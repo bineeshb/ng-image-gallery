@@ -1,0 +1,11 @@
+<div *ngIf="imageParams && isImageVisible" class="img-wrapper position-fixed w-100 h-100 text-center">
+  <img [src]="imageParams.url" [alt]="imageParams.altDescription" class="p-2">
+  <div class="img-metadata position-absolute w-100 text-right p-3 text-white bg-dark">
+    <p class="m-0"><ng-container *ngIf="imageParams.description">"{{ imageParams.description }}"</ng-container> by <a [href]="imageParams.portfolioLink" target="_blank">{{ imageParams.user }}</a></p>
+    <p class="m-0">Dimensions: {{ imageParams.width }}x{{ imageParams.height }}</p>
+  </div>
+  <button type="button" class="close btn-close position-absolute rounded-circle bg-white"
+    (click)="isImageVisible = false" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

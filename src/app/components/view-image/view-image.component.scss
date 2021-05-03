@@ -1,0 +1,21 @@
+.img-wrapper {
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+
+img {
+  max-height: calc(100% - 80px);
+}
+
+.img-metadata {
+  bottom: 0;
+}
+
+.btn-close {
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+}
