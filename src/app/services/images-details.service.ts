@@ -10,7 +10,7 @@ import { GalleryResponse } from '../interfaces/gallery';
   providedIn: 'root'
 })
 export class ImagesDetailsService {
-  private readonly accessKey = '8NcQjAygMTaIvHql2wvwakLwEXfBzrrqNQ8L7BBlvYQ';
+  private readonly accessKey = null;
   private readonly defaultPageNumber = 1;
   private readonly defaultPageSize = 30;
 
